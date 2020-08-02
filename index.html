@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="look.css">
+    <script src="validate.js"></script>
+</head>
+<body onload="document.Registration.fname.focus()" onsubmit="return validation()">
+    <h1>Form Validation</h1>
+    <form name="Registration">
+       <p><label>First Name:</label><input type="text" name="fname"></p>
+       <p><label>Last Name:</label><input type="text" name="lname"></p>
+       <p><label>Age:</label><input type="number" name="age" step="1"></p>
+        <p><label>Gender:</label>
+        <label class="Gender">Male<input type="radio" name="gender" value="male"></label>
+        <label class="Gender">Female<input type="radio" name="gender" value="female"></label>  
+        </p>
+        <button type="submit" value="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
