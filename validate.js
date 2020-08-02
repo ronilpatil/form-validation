@@ -17,11 +17,12 @@ function validation(){
     var age=document.Registration.age;
     if(age.value==""){
         alert("Enter age")
-        fname.focus()
+        age.focus()
         return false;
     }
     else if(parseInt(age.value)<0){
         alert("Age cannot be negative.\nPlease enter a valid age.")
+        age.focus()
         return false;
     }
 
